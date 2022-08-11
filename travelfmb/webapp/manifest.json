@@ -18,6 +18,7 @@
                 "uri": "/sap/opu/odata/sap/ZSB_TRAVEL_FMB/",
                 "type": "OData",
                 "settings": {
+                    "odataVersion": "2.0",
                     "annotations": [
                         "ZSB_TRAVEL_FMB_VAN",
                         "annotation"
@@ -104,12 +105,10 @@
                 "type": "sap.ui.model.resource.ResourceModel",
                 "uri": "i18n/ObjectPage/Travel/i18n.properties"
             },
-            
             "i18n|sap.suite.ui.generic.template.ObjectPage|Booking": {
-              "type": "sap.ui.model.resource.ResourceModel",
-              "uri": "i18n/ObjectPage/Booking/i18n.properties"
+                "type": "sap.ui.model.resource.ResourceModel",
+                "uri": "i18n/ObjectPage/Booking/i18n.properties"
             },
-            
             "": {
                 "dataSource": "mainService",
                 "preload": true,
@@ -164,29 +163,24 @@
                             "name": "sap.suite.ui.generic.template.ObjectPage"
                         },
                         "pages": {
-                          "ObjectPage|to_Booking":{
-                            "navigationProperty": "to_Booking",
-                            "entitySet": "Booking",
-                            "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
-                            "component": {
-                              "name": "sap.suite.ui.generic.template.ObjectPage"
-                            }
-
-
-                            ,
-                            "pages": {
-                                "ObjectPage|to_BookingSupplement":{
-                                  "navigationProperty": "to_BookingSupplement",
-                                  "entitySet": "BookingSupplement",
-                                  "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
-                                  "component": {
+                            "ObjectPage|to_Booking": {
+                                "navigationProperty": "to_Booking",
+                                "entitySet": "Booking",
+                                "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
+                                "component": {
                                     "name": "sap.suite.ui.generic.template.ObjectPage"
-                                  }
+                                },
+                                "pages": {
+                                    "ObjectPage|to_BookingSupplement": {
+                                        "navigationProperty": "to_BookingSupplement",
+                                        "entitySet": "BookingSupplement",
+                                        "defaultLayoutTypeIfExternalNavigation": "MidColumnFullScreen",
+                                        "component": {
+                                            "name": "sap.suite.ui.generic.template.ObjectPage"
+                                        }
+                                    }
                                 }
                             }
-
-
-                          }
                         }
                     }
                 }

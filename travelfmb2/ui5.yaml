@@ -1,6 +1,8 @@
-specVersion: '2.4'
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "2.5"
 metadata:
-  name: 'travelfmb'
+  name: travelfmb2
 type: application
 server:
   customMiddleware:
@@ -8,20 +10,16 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
-        backend:
-          - path: /sap
-            url: https://48d61f78-e6aa-480f-94e4-ecaf26360dcb.abap.us10.hana.ondemand.com
-            destination: abap-cloud-abap-trial-bd603994trial-dev
-          - path: /sap/opu/odata/sap/ZSB_TRAVEL_FMB/
-            url: https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com
-            destination: abap-cloud-default_abap-trial-38eae159trial-dev
-            scp: true
         ui5:
           path:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
-          version: null # The UI5 version, for instance, 1.78.1. Empty means latest version
+        backend:
+          - scp: true
+            path: /sap
+            url: https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com
+            destination: abap-cloud-default_abap-trial-38eae159trial-dev
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -31,4 +29,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: travelfmb
+        component: travelfmb2
+        ui5Theme: sap_fiori_3
