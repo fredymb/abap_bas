@@ -1,157 +1,157 @@
 {
-    "configurations": [
-        {
-            "name": "Start travelfmb",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npm",
-            "cwd": "${workspaceFolder}/travelfmb",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
-            }
-        },
-        {
-            "name": "Start travelfmb Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/travelfmb",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-mock"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
-            }
-        },
-        {
-            "name": "Start travelfmb Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/travelfmb",
-            "runtimeExecutable": "npm",
-            "windows": {
-                "runtimeExecutable": "npm.cmd"
-            },
-            "runtimeArgs": [
-                "run-script",
-                "start-local"
-            ],
-            "console": "integratedTerminal",
-            "internalConsoleOptions": "neverOpen",
-            "port": 9229,
-            "env": {
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
-            }
-        },
-        {
-            "name": "Start travelfmb2",
-            "type": "node",
-            "request": "launch",
-            "runtimeExecutable": "npx",
-            "cwd": "${workspaceFolder}/travelfmb2",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--open",
-                "test/flpSandbox.html#travelfmb2-tile"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "DEBUG": "--inspect",
-                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
-            }
-        },
-        {
-            "name": "Start travelfmb2 Mock",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/travelfmb2",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-mock.yaml",
-                "--open",
-                "test/flpSandbox.html#travelfmb2-tile"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
-            }
-        },
-        {
-            "name": "Start travelfmb2 Local",
-            "type": "node",
-            "request": "launch",
-            "cwd": "${workspaceFolder}/travelfmb2",
-            "runtimeExecutable": "npx",
-            "windows": {
-                "runtimeExecutable": "npx.cmd"
-            },
-            "runtimeArgs": [
-                "fiori",
-                "run"
-            ],
-            "args": [
-                "--config",
-                "./ui5-local.yaml",
-                "--open",
-                "test/flpSandbox.html#travelfmb2-tile"
-            ],
-            "console": "internalConsole",
-            "internalConsoleOptions": "openOnSessionStart",
-            "outputCapture": "std",
-            "port": 9229,
-            "env": {
-                "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
-                "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
-            }
-        }
-    ],
-    "compounds": [],
-    "inputs": [
-        {
-            "id": "UI5Version",
-            "type": "command",
-            "command": "sap.ux.appGenerator.ui5Version"
-        }
-    ],
-    "version": "0.2.0"
+  "configurations": [
+    {
+      "name": "Start travelfmb",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/travelfmb",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
+      }
+    },
+    {
+      "name": "Start travelfmb Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/travelfmb",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-mock"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
+      }
+    },
+    {
+      "name": "Start travelfmb Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/travelfmb",
+      "runtimeExecutable": "npm",
+      "windows": {
+        "runtimeExecutable": "npm.cmd"
+      },
+      "runtimeArgs": [
+        "run-script",
+        "start-local"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "port": 9229,
+      "env": {
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/travelfmb\"}"
+      }
+    },
+    {
+      "name": "Start travelfmb2",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "cwd": "${workspaceFolder}/travelfmb2",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--open",
+        "test/flpSandbox.html#travelfmb2-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "DEBUG": "--inspect",
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
+      }
+    },
+    {
+      "name": "Start travelfmb2 Mock",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/travelfmb2",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-mock.yaml",
+        "--open",
+        "test/flpSandbox.html#travelfmb2-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
+      }
+    },
+    {
+      "name": "Start travelfmb2 Local",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/travelfmb2",
+      "runtimeExecutable": "npx",
+      "windows": {
+        "runtimeExecutable": "npx.cmd"
+      },
+      "runtimeArgs": [
+        "fiori",
+        "run"
+      ],
+      "args": [
+        "--config",
+        "./ui5-local.yaml",
+        "--open",
+        "test/flpSandbox.html#travelfmb2-tile"
+      ],
+      "console": "internalConsole",
+      "internalConsoleOptions": "openOnSessionStart",
+      "outputCapture": "std",
+      "port": 9229,
+      "env": {
+        "FIORI_TOOLS_URL_PARAMS": "sap-ui-xx-viewCache=false",
+        "run.config": "{\"handlerId\":\"fiori_tools\",\"runnableId\":\"/home/user/projects/abap_bas/travelfmb2\"}"
+      }
+    }
+  ],
+  "compounds": [],
+  "inputs": [
+    {
+      "id": "UI5Version",
+      "type": "command",
+      "command": "sap.ux.appGenerator.ui5Version"
+    }
+  ],
+  "version": "0.2.0"
 }

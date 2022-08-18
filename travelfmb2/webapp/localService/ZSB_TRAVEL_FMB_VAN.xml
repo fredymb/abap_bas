@@ -382,6 +382,7 @@
                     <Record>
                         <PropertyValue Property="TypeName" String="Travel"/>
                         <PropertyValue Property="TypeNamePlural" String="Travels"/>
+                        <PropertyValue Property="ImageUrl" Path="ImageURL"/>
                         <PropertyValue Property="Title">
                             <Record Type="UI.DataField">
                                 <PropertyValue Property="Value" Path="TravelID"/>

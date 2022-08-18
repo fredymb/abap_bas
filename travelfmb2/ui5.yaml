@@ -16,10 +16,10 @@ server:
             - /test-resources
           url: https://ui5.sap.com
         backend:
-          - scp: true
-            path: /sap
+          - path: /sap
             url: https://45f514af-f57b-4579-990b-8b70ea328491.abap.us10.hana.ondemand.com
             destination: abap-cloud-default_abap-trial-38eae159trial-dev
+            scp: true
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
